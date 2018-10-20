@@ -1,12 +1,12 @@
 #include<iostream>
-#include<array>
+
 void Sort(int length,int tab[]){
   for(int i=0;i < length;i++){
     int index=-1;
     int smallest = tab[i];
     for (int j = i; j < length; j++) {
       if(tab[j] < smallest){
-        std::cout << tab[j]<<"->"<<smallest<<"\n";
+      
         smallest = tab[j];
         index=j;
       }
